@@ -266,7 +266,7 @@ if ($metodo === "GET") {
                 "SELECT pp.cantidad,
                         pp.precio_unitario,
                         pr.nombre AS nombre_producto
-                 FROM Producto_pedido pp
+                 FROM Producto_pedido
                  JOIN Producto pr ON pp.id_producto = pr.id_producto
                  WHERE pp.id_pedido = :id_pedido"
             );
